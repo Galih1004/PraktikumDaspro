@@ -6,12 +6,15 @@ public class Tugas2 {
 
         System.out.println("--- Masukkan Angka ---");
         int angka = sc.nextInt();
-        String hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
-        System.out.println("Angka " + angka + " adalah " + hasil);       
-        
+           if (angka % 2 == 0) {
+            System.out.println(angka + " adalah bilangan genap");
+              } else {
+            System.out.println(angka + " adalah bilangan ganjil");
+              }
+            
+            
         
         sc.close();
-        
     }
     
 }
