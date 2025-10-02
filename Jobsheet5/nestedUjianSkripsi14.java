@@ -10,12 +10,20 @@ public class nestedUjianSkripsi14 {
         System.out.print("Apakah mahasiswa bebas kompen (Ya/Tidak): ");
         String bebasKompen = sc.nextLine().trim();
 
+        if (!bebasKompen.equalsIgnoreCase("Ya")) {
+              pesan = "Mahasiswa tidak bebas kompen.";
+                System.out.println(pesan);
+              sc.close();
+              return;
+            
+
+        }
         System.out.print("Jumlah bimbingan pembimbing 1: ");
         int bimbinganP1 = sc.nextInt();
         System.out.print("Jumlah bimbingan pembimbing 2: ");
         int bimbinganP2 = sc.nextInt();
 
-        if (bebasKompen.equalsIgnoreCase("Ya")) {
+   
             if (bimbinganP1 >= 8 && bimbinganP2  >= 4)  {
                 pesan = "Semua Syarat terpenuhi, silakan mengikuti ujian skripsi.";
             } else if (bimbinganP1 < 8 && bimbinganP2 < 4) {
@@ -25,9 +33,6 @@ public class nestedUjianSkripsi14 {
             } else {
                 pesan = "Syarat bimbingan pembimbing 2 belum terpenuhi.";
             }
-        } else {
-            pesan = "Gagal Mahasiswa belum bebas kompen.";
-        }
         System.out.println(pesan);
         sc.close();
     }
