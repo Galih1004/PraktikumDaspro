@@ -65,21 +65,23 @@ public class CaseMethod1 {
         
      sc.close();
     } 
-    // Method untuk mengubah nilai akhir menjadi nilai huruf
+    // Method untuk menyingkronkan nilai akhir dan nilai huruf
     public static String getNilaiHuruf(double nilaiAkhir) {
-        if (nilaiAkhir >= 85) {
+        if (nilaiAkhir >= 97) {
+            return "A+";
+        } else if (nilaiAkhir >= 91) {
             return "A";
-        } else if (nilaiAkhir >= 80) {
+        } else if (nilaiAkhir >= 86) {
             return "A-";
-        } else if (nilaiAkhir >= 75) {
+        } else if (nilaiAkhir >= 85) {
             return "B+";
-        } else if (nilaiAkhir >= 70) {
+        } else if (nilaiAkhir >= 80) {
             return "B";
-        } else if (nilaiAkhir >= 65) {
+        } else if (nilaiAkhir >= 79) {
             return "B-";
-        } else if (nilaiAkhir >= 60) {
+        } else if (nilaiAkhir >= 70) {
             return "C+";
-        } else if (nilaiAkhir >= 55) {
+        } else if (nilaiAkhir >= 60) {
             return "C";
         } else if (nilaiAkhir >= 50) {
             return "D";
