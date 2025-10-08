@@ -30,6 +30,10 @@ public class CaseMethod1 {
         System.out.print("Masukkan Nilai Tugas anda: ");
         int tugas2 = sc.nextInt();
 
+    // Menghitung Nilai Akhir Mata Kuliah 
+        double nilaiAkhir1 = (double) (0.3 * uts1 + 0.4 * uas1 + 0.3 * tugas1);
+        double nilaiAkhir2 = (double) (0.3 * uts2 + 0.4 * uas2 + 0.3 * tugas2);
+
 
     // Output Data Mahasiswa, Nilai Mata Kuliah 1
         System.out.println("\n=== Hasil Mahasiswa ===");
@@ -45,6 +49,10 @@ public class CaseMethod1 {
         System.out.println("Nilai UTS: " + uts2);
         System.out.println("Nilai UAS: " + uas2);
         System.out.println("Nilai Tugas: " + tugas2);
+
+        System.out.println("Akumulasi Nilai Akhir:");
+        System.out.println("Nilai Akhir Mata Kuliah 1: " + nilaiAkhir1);
+        System.out.println("Nilai Akhir Mata Kuliah 2: " + nilaiAkhir2);    
 
         
      sc.close();
