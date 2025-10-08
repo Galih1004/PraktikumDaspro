@@ -39,30 +39,36 @@ public class CaseMethod1 {
         String huruf2 = getNilaiHuruf(nilaiAkhir2);
         String status2 = nilaiAkhir2 >= 79 ? "LULUS" : "TIDAK LULUS";
 
+    // Menghitung Rata Rata 
+        double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
+        String statusSemester = rataRata >= 79 ? "LULUS" : "TIDAK LULUS (Rata-rata < 79)";
+
     // Output Data Mahasiswa, Nilai Mata Kuliah 1
         System.out.println("\n=== Hasil Mahasiswa ===");
         System.out.println("Nama Mahasiswa: " + nama);
         System.out.println("NIM Mahasiswa: " + nim);
-
+        System.out.println();
         System.out.println("Mata Kuliah 1: Algoritma Dan Pemrograman");
         System.out.println("Nilai UTS: " + uts1);
         System.out.println("Nilai UAS: " + uas1);
         System.out.println("Nilai Tugas: " + tugas1);
-
+        System.out.println();
         System.out.println("Mata Kuliah 2: Struktur Data");
         System.out.println("Nilai UTS: " + uts2);
         System.out.println("Nilai UAS: " + uas2);
         System.out.println("Nilai Tugas: " + tugas2);
+        System.out.println();
+        System.out.println("=============== Hasil Penilaian Akademik ===============");
+        System.out.println("Nama Mahasiswa: " + nama);
+        System.out.println("NIM Mahasiswa: " + nim);
+        System.out.println();
+        System.out.println("Mata kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\t\tStatus");
+        System.out.println("=============================================================================================================");
+        System.out.println("Algoritma Dan Pemrograman:\t" + uts1 + "\t" + uas1 + "\t" + tugas1 + "\t" + nilaiAkhir1 + "\t\t" + huruf1 + "\t\t\t" + status1);
+        System.out.println("Struktur Data:\t\t\t" + uts2 + "\t" + uas2 + "\t" + tugas2 + "\t" + nilaiAkhir2 + "\t\t" + huruf2 + "\t\t\t" + status2);
+        System.out.println();
+        System.out.println("Rata-rata Nilai Akhir:" + rataRata + " (Status:" + statusSemester + ")");
 
-        System.out.println("Memunculkan Nilai Akhir:");
-        System.out.println("Nilai Akhir Mata Kuliah 1: " + nilaiAkhir1);
-        System.out.println("Nilai Akhir Mata Kuliah 2: " + nilaiAkhir2);
-        System.out.println("Nilai Huruf Mata Kuliah 1: " + huruf1);
-        System.out.println("Status Mata Kuliah 1: " + status1);
-        System.out.println("Nilai Huruf Mata Kuliah 2: " + huruf2);
-        System.out.println("Status Mata Kuliah 2: " + status2);    
-
-        
      sc.close();
     } 
     // Method untuk menyingkronkan nilai akhir dan nilai huruf
@@ -90,5 +96,3 @@ public class CaseMethod1 {
         }
     }
 }     
-
-
