@@ -35,15 +35,23 @@ public class CaseMethod1 {
         double nilaiAkhir2 = (double) (0.3 * uts2 + 0.4 * uas2 + 0.3 * tugas2);
 
         String huruf1 = getNilaiHuruf(nilaiAkhir1);
-        String status1 = nilaiAkhir1 >= 79 ? "LULUS" : "TIDAK LULUS";
+        String status1 = nilaiAkhir1 >= 60 ? "LULUS" : "TIDAK LULUS";
         String huruf2 = getNilaiHuruf(nilaiAkhir2);
-        String status2 = nilaiAkhir2 >= 79 ? "LULUS" : "TIDAK LULUS";
+        String status2 = nilaiAkhir2 >= 60 ? "LULUS" : "TIDAK LULUS";
 
-    // Menghitung Rata Rata 
+    // Menghitung Rata Rata dan Status Semester
         double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
-        String statusSemester = rataRata >= 79 ? "LULUS" : "TIDAK LULUS (Rata-rata < 79)";
+        String statusSemester;
+            if (nilaiAkhir1 < 60 || nilaiAkhir2 < 60) {
+    
+                    statusSemester = "TIDAK LULUS";
+                } else if (rataRata >= 70) {
+                    statusSemester = "LULUS";
+            } else {
+                    statusSemester = "TIDAK LULUS";
+            }
 
-    // Output Data Mahasiswa, Nilai Mata Kuliah 1
+    // Output Data Mahasiswa dan Hasil Penilaian
         System.out.println("\n=== Hasil Mahasiswa ===");
         System.out.println("Nama Mahasiswa: " + nama);
         System.out.println("NIM Mahasiswa: " + nim);
@@ -67,32 +75,27 @@ public class CaseMethod1 {
         System.out.println("Algoritma Dan Pemrograman:\t" + uts1 + "\t" + uas1 + "\t" + tugas1 + "\t" + nilaiAkhir1 + "\t\t" + huruf1 + "\t\t\t" + status1);
         System.out.println("Struktur Data:\t\t\t" + uts2 + "\t" + uas2 + "\t" + tugas2 + "\t" + nilaiAkhir2 + "\t\t" + huruf2 + "\t\t\t" + status2);
         System.out.println();
-        System.out.println("Rata-rata Nilai Akhir:" + rataRata + " (Status:" + statusSemester + ")");
+        System.out.println("Rata-rata Nilai Akhir:" + rataRata );
+        System.out.println("Status Semester: " + statusSemester);
 
      sc.close();
     } 
-    // Method untuk menyingkronkan nilai akhir dan nilai huruf
+    // Method untuk menyingkronkan nilai akhir dan nilai huruf menggunakan if else dan nested if
     public static String getNilaiHuruf(double nilaiAkhir) {
-        if (nilaiAkhir >= 97) {
-            return "A+";
-        } else if (nilaiAkhir >= 91) {
+        if (nilaiAkhir > 80 && nilaiAkhir <= 100) {
             return "A";
-        } else if (nilaiAkhir >= 86) {
-            return "A-";
-        } else if (nilaiAkhir >= 85) {
-            return "B+";
-        } else if (nilaiAkhir >= 80) {
-            return "B";
-        } else if (nilaiAkhir >= 79) {
-            return "B-";
-        } else if (nilaiAkhir >= 70) {
-            return "C+";
-        } else if (nilaiAkhir >= 60) {
-            return "C";
-        } else if (nilaiAkhir >= 50) {
-            return "D";
-        } else {
-            return "E";
-        }
+            } else if (nilaiAkhir >= 73 && nilaiAkhir < 80) {
+                return "B+";
+                } else if (nilaiAkhir >= 65 && nilaiAkhir < 73) {
+                    return "B";
+                    } else if (nilaiAkhir >= 60 && nilaiAkhir < 65) {
+                        return "C+";
+                        } else if (nilaiAkhir >= 50 && nilaiAkhir < 60) {
+                            return "C";
+                             } else if (nilaiAkhir >= 39 && nilaiAkhir < 50) {
+                                return "D";
+                                } else {
+                                    return "E";
+                                    }
     }
 }     
