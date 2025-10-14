@@ -42,6 +42,7 @@ public class CaseMethod1 {
     // Menghitung Rata Rata dan Status Semester
         double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
         String statusSemester;
+        String pesan = ".";
             if (nilaiAkhir1 < 60 || nilaiAkhir2 < 60) {
     
                     statusSemester = "TIDAK LULUS";
@@ -49,6 +50,7 @@ public class CaseMethod1 {
                     statusSemester = "LULUS";
             } else {
                     statusSemester = "TIDAK LULUS";
+                    
             }
 
     // Output Data Mahasiswa dan Hasil Penilaian
@@ -76,7 +78,7 @@ public class CaseMethod1 {
         System.out.println("Struktur Data:\t\t\t" + uts2 + "\t" + uas2 + "\t" + tugas2 + "\t" + nilaiAkhir2 + "\t\t" + huruf2 + "\t\t\t" + status2);
         System.out.println();
         System.out.println("Rata-rata Nilai Akhir:" + rataRata );
-        System.out.println("Status Semester: " + statusSemester);
+        System.out.println("Status Semester: " + statusSemester + pesan );
 
      sc.close();
     } 
