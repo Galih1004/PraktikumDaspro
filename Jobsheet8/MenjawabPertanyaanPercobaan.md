@@ -13,3 +13,9 @@ jika kita menggunakan (i--) sebagai update maka jumlah dari inisialisasi akan di
    baris dan kolom diartikan dalam materi logika loker / rak.
 4. untuk membuat baris baru (newLine), jika syntax s.o.pln ini dihilangkan maka semua output akan tercetak dalam satu baris.
 5. sudah
+
+// Pertanyaan Percobaan 3
+
+1. tidak sesuai,
+2. perlu menambahkan (system.out.println();) supaya output tidak tercetak dalam satu baris
+3. sudah
