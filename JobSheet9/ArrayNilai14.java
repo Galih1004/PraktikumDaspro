@@ -8,12 +8,14 @@ public class ArrayNilai14 {
         int [] nilaiAkhir = new int[10];
 
         for(int i=0; i < nilaiAkhir.length; i++) {
-            System.out.print("Masukkan nilai akhir ke-" +i +":");
+            System.out.print("Masukkan nilai akhir mahasiswa ke-" +i +":");
             nilaiAkhir[i] = sc.nextInt();
         }
         for(int i=0; i < nilaiAkhir.length; i++) {
             if (nilaiAkhir[i] > 70) {
                 System.out.println("mahasiswa ke-" + i + "lulus");
+            } else {
+                System.out.println("mahasiswa ke-" + i + "tidak lulus");
             }
         }
         sc.close();
