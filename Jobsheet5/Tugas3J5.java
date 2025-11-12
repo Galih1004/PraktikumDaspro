@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tugas3 {
+public class Tugas3J5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String Dosen = "dosen", Mahasiswa = "mahasiswa";

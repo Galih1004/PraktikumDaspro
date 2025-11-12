@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tugas2 {
+public class Tugas2J8 {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String[] CABOR = {"Badminton", "Tenis Meja", "Basket", "Bola Voli"}; 
