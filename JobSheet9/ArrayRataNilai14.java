@@ -32,7 +32,8 @@ public class ArrayRataNilai14 {
         System.out.println("Rata-rata nilai mahasiswa adalah: " + rata2);
         System.out.println();
         System.out.println("Jumlah mahasiswa yang lulus: " + lulus);
-        
+        System.out.println("Jumlah mahasiswa yang tidak lulus: " + tidakLulus);
+
         
         sc.close();
     }
