@@ -15,4 +15,9 @@
 // Jawaban Pada Percobaan 3
 
 1. sudah
+2. sudah
+
+// Jawaban Pada Percobaan 4
+
+1. kondisi break; adalah kondisi dimana sebuah perulangan akan berhenti secara paksa ketika suatu nilai sudah ditemukan.
 2. 
