@@ -1,4 +1,4 @@
-package JobSheet9;
+
 import java.util.Scanner;
 
 public class ArrayNilai14 {
