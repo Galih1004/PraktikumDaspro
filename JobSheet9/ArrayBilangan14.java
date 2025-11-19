@@ -5,7 +5,7 @@ public class ArrayBilangan14 {
         int[] bil = {5, 13, -7, 17};
 
         for (int i = 0; i < bil.length; i++) {
-            System.out.println("Bilangan pada indeks ke-" + i + " adalah " + bil[i]);
+            System.out.println("Nilai bilangan pada index ke-" + i + " : " + bil[i]);
         }
     }
 }
